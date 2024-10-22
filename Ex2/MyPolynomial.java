@@ -35,6 +35,7 @@ public class MyPolynomial {
         }
         return result;
     }
+    //copilot
     public MyPolynomial add(MyPolynomial right) {
         int maxDegree = Math.max(this.getDegree(), right.getDegree());
         double[] resultCoeffs = new double[maxDegree+1];
@@ -46,6 +47,7 @@ public class MyPolynomial {
             return new MyPolynomial(resultCoeffs);
 
     }
+    //copilot
     public MyPolynomial multiply(MyPolynomial right) {
         int newDegree = this.getDegree() + right.getDegree();
         double[] resultCoeffs = new double[newDegree + 1];
